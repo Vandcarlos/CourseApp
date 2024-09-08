@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "40EC0BFB-E41B-4D9D-A353-A890C3E8F99B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CourseApp.xcodeproj",
+        "identifier" : "64E42751BEFD30462A2E0796",
+        "name" : "SampleFrameworkTests"
+      }
+    }
+  ],
+  "version" : 1
+}

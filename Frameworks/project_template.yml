@@ -1,0 +1,24 @@
+targetTemplates:
+  Framework:
+    type: framework
+    platform: iOS
+    sources:
+      - path: ${target_name}/Sources
+        createIntermediateGroups: true
+    info: 
+      path: ${target_name}-info.plist
+    scheme:
+      testTargets:
+        - ${target_name}Tests
+      gatherCoverageData: true
+  FrameworkTest:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: TestsCommons
+        createIntermediateGroups: true
+      - path: ${framework_name}/Tests
+        createIntermediateGroups: true
+
+    info: 
+      path: ${target_name}-info.plist

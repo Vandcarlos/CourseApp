@@ -1,0 +1,18 @@
+include: Frameworks/project.yml
+
+name: CourseApp
+
+options:
+  bundleIdPrefix: com.course-app
+  deploymentTarget: 
+    iOS: 15.0
+
+targets:
+  App:
+    type: application
+    platform: iOS
+    sources: App
+    info: 
+      path: info.plist
+    dependencies:
+      - target: SampleFramework

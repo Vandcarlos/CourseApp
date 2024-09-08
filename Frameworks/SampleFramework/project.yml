@@ -1,0 +1,11 @@
+include: ../project_template.yml
+
+targets:
+  SampleFramework:
+    templates: 
+      - Framework
+  SampleFrameworkTests:
+    templates: 
+      - FrameworkTest
+    templateAttributes:
+      framework_name: SampleFramework
